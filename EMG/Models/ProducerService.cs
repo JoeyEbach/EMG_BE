@@ -11,5 +11,6 @@ namespace EMG.Models;
         public Service Service { get; set; }
         public decimal Price { get; set; }
         public bool Active { get; set; }
+        public ICollection<Project> Projects { get; set; }
     }
 

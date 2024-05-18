@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-AppContext.SetSwitch("Npgsql.EnableLegacyTimestampbehavior", true);
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 builder.Services.AddNpgsql<EMGDbContext>(builder.Configuration["EMGDbConnectionString"]);
 builder.Services.Configure<JsonOptions>(options =>
 {

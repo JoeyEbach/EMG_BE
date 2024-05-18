@@ -12,7 +12,7 @@ namespace EMG.Models;
         public User Producer { get; set; }
         public ICollection<ProducerService> ProducerServices { get; set; }
         public DateTime StartDate { get; set; }
-        public string CompleteDate { get; set; }
+        public DateTime? CompleteDate { get; set; }
         public bool IsComplete { get; set; }
         public int KeyId { get; set; }
         public Key Key { get; set; }
